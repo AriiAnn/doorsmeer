@@ -77,7 +77,13 @@ if( empty( $_SESSION['id_user'] ) ){
 
         <p>Halo <strong><?php echo $_SESSION['nama']; ?></strong>, Anda login sebagai
 			<strong>
-			Admin.
+			<?php
+				if($_SESSION['level'] == 1){
+					echo 'Admin.';
+				} else {
+						echo 'Petugas Kasir.';
+				}
+			?>
 			</strong>
 		</p>
       </div>
@@ -90,7 +96,8 @@ if( empty( $_SESSION['id_user'] ) ){
     <!-- Bootstrap core JavaScript, Placed at the end of the document so the pages load faster -->
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
-
+	<script src="js/jquery.min.js"></script>
+	
   </body>
 
 </html>
