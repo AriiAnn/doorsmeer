@@ -25,9 +25,9 @@ if( empty( $_SESSION['id_user'] ) ){
 		}
 	} else {
 ?>
-<h2>Tambah User Baru</h2>
+<h2 style="color: #ffffff;">Tambah User Baru</h2>
 <hr>
-<form method="post" action="" class="form-horizontal" role="form">
+<form method="post" action="" class="form-horizontal" role="form" style="color: #ffffff;">
 	<div class="form-group">
 		<label for="username" class="col-sm-2 control-label">Username</label>
 		<div class="col-sm-3">

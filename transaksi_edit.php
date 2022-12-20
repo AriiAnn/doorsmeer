@@ -33,9 +33,9 @@ if( empty( $_SESSION['id_user'] ) ){
 
 ?>
 
-<h2>Edit Data Transaksi</h2>
+<h2 style="color: #ffffff;">Edit Data Transaksi</h2>
 <hr>
-<form method="post" action="" class="form-horizontal" role="form">
+<form method="post" action="" class="form-horizontal" role="form" style="color: #ffffff;">
 	<div class="form-group">
 		<label for="no_nota" class="col-sm-2 control-label">No. Nota</label>
 		<div class="col-sm-3">
@@ -70,13 +70,13 @@ if( empty( $_SESSION['id_user'] ) ){
 	<div class="form-group">
 		<label for="kembali" class="col-sm-2 control-label">Kembalian</label>
 		<div class="col-sm-3">
-			<input type="number" class="form-control" id="kembali" name="kembali" value="<?php echo $row['kembali']; ?>" placeholder="Kembalian" required>
+			<input type="number" class="form-control" id="kembali" name="kembali" value="<?php echo $row['kembali']; ?>" placeholder="Kembalian" required readonly>
 		</div>
 	</div>
 	<div class="form-group">
 		<label for="total" class="col-sm-2 control-label">Total Bayar</label>
 		<div class="col-sm-3">
-			<input type="number" class="form-control" id="total" name="total" value="<?php echo $row['total']; ?>" placeholder="Total Bayar" required>
+			<input type="number" class="form-control" id="total" name="total" value="<?php echo $row['total']; ?>" placeholder="Total Bayar" required readonly>
 		</div>
 	</div>
 	<div class="form-group">
@@ -103,14 +103,14 @@ $(document).ready(function(){
 
   $("#jenis").change(function(){
 	var biaya = $(this).val();
-	$("#biaya").val(biaya);
+	$("#total").val(total);
   });
 
   $("#bayar").keyup(function(){
-	  var biaya = $("#biaya").val();
+	  var total = $("#total").val();
 	  var bayar = $("#bayar").val();
-	  $("#kembali").val(bayar - biaya);
-	  $("#total").val(biaya);
+	  $("#kembali").val(bayar - total);
+	  $("#total").val(total);
   });
 
 });

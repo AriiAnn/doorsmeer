@@ -33,42 +33,28 @@
 	body {
 	  padding-top: 40px;
 	  padding-bottom: 40px;
-	  background-color: #eee;
+	  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(image/background.jpg);
+  	background-size: cover;
 	}
 
 	.form-signin {
 	  max-width: 330px;
 	  padding: 15px;
-	  margin: 0 auto;
+	  margin: auto;
 	}
-	.form-signin .form-signin-heading,
-	.form-signin .checkbox {
-	  margin-bottom: 10px;
-	}
-	.form-signin .checkbox {
-	  font-weight: normal;
-	}
+
 	.form-signin .form-control {
-	  position: relative;
 	  height: auto;
-	  -webkit-box-sizing: border-box;
-		 -moz-box-sizing: border-box;
-			  box-sizing: border-box;
 	  padding: 10px;
 	  font-size: 16px;
 	}
-	.form-signin .form-control:focus {
-	  z-index: 2;
-	}
-	.form-signin input[type="text"] {
-	  margin-bottom: -1px;
-	  border-bottom-right-radius: 0;
-	  border-bottom-left-radius: 0;
-	}
 	.form-signin input[type="password"] {
 	  margin-bottom: 10px;
-	  border-top-left-radius: 0;
-	  border-top-right-radius: 0;
 	}
 	</style>
 
@@ -118,7 +104,7 @@
             unset($_SESSION['err']);
 		}
 		?>
-        <h2 class="form-signin-heading">Login Admin</h2>
+        <h2 class="form-signin-heading" style="color: #ffffff;">Login Admin</h2>
         <input type="text" name="username" class="form-control" placeholder="Username" required autofocus>
         <input type="password" name="password" class="form-control" placeholder="Password" required>
         <button class="btn btn-lg btn-primary btn-block" type="submit" name="login">Login</button>

@@ -33,10 +33,10 @@ if( empty( $_SESSION['id_user'] ) ){
 
 ?>
 
-<h2>Edit Tipe User</h2>
+<h2 style="color: #ffffff;">Edit Tipe User</h2>
 <hr>
 
-<form method="post" action="" class="form-horizontal" role="form">
+<form method="post" action="" class="form-horizontal" role="form" style="color: #ffffff;">
 	<div class="form-group">
         <input type="hidden" name="id_user" value="<?php echo $row['id_user']; ?>">
 		<label for="username" class="col-sm-2 control-label">Username</label>

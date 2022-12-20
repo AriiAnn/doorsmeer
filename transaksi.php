@@ -27,7 +27,7 @@ if( empty( $_SESSION['id_user'] ) ){
 		echo '
 
 			<div class="container">
-				<h3 style="margin-bottom: -20px;">Daftar Transaksi</h3>
+				<h3 style="margin-bottom: -20px; color: #ffffff;">Daftar Transaksi</h3>
 					<a href="./admin.php?hlm=transaksi&aksi=baru" class="btn btn-success btn-s pull-right">Tambah Data</a>
 				<br/><hr/>
 
@@ -43,7 +43,7 @@ if( empty( $_SESSION['id_user'] ) ){
 					 <th width="20%">Tindakan</th>
 				   </tr>
 				 </thead>
-				 <tbody>';
+				 <tbody style="color: #ffffff;">';
 
 			//skrip untuk menampilkan data dari database
 		 	$sql = mysqli_query($koneksi, "SELECT * FROM transaksi");
@@ -80,7 +80,7 @@ if( empty( $_SESSION['id_user'] ) ){
 					 </td>';
 				}
 			} else {
-				 echo '<td colspan="8"><center><p class="add">Tidak ada data untuk ditampilkan. <u><a href="?hlm=transaksi&aksi=baru">Tambah data baru</a></u> </p></center></td></tr>';
+				 echo '<td colspan="8"><center><p class="add" style="color: #ffffff;">Tidak ada data untuk ditampilkan. <u><a href="?hlm=transaksi&aksi=baru" style="color: #ffffff;">Tambah data baru</a></u> </p></center></td></tr>';
 			}
 			echo '
 			 	</tbody>

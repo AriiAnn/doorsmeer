@@ -23,9 +23,9 @@
     list($no_nota, $nama, $jenis, $bayar, $kembali, $total, $tanggal, $id_user) = mysqli_fetch_array($sql);
 
     echo '
-        <center><h3>Cuci Bersih Mobil Motor</h3></center>
+        <center><h3 style="color: #ffffff;">Cuci Bersih Mobil Motor</h3></center>
         <hr/>
-        <h4>Nota Nomor : <b>'.$no_nota.'</b></h4>
+        <h4 style="color: #ffffff;">Nota Nomor : <b>'.$no_nota.'</b></h4>
         <table class="table table-bordered">
          <thead>
            <tr class="info">
@@ -39,7 +39,7 @@
          </thead>
          <tbody>
 
-           <tr>
+           <tr style="color: #ffffff;">
              <td>'.$nama.'</td>
              <td>'.$jenis.'</td>
              <td>RP. '.number_format($bayar).'</td>
@@ -52,8 +52,8 @@
     </table>
 
     <div style="margin: 0 0 50px 75%;">
-        <p style="margin-bottom: 60px;">Petugas Kasir</p>
-        <p>';
+        <p style="margin-bottom: 60px; color: #ffffff;">Petugas Kasir</p>
+        <p style="color: #ffffff;">';
 
         $sql = mysqli_query($koneksi, "SELECT nama FROM user WHERE id_user='$id_user'");
         list($nama) = mysqli_fetch_array($sql);
@@ -63,7 +63,7 @@
         echo '</p>
     </div>
 
-    <center>-------------------- Terima Kasih ------------------- </center>
+    <center style="color: #ffffff;">-------------------- Terima Kasih ------------------- </center>
 
     </div>
 </body>

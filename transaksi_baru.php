@@ -26,9 +26,9 @@ if( empty( $_SESSION['id_user'] ) ){
 		}
 	} else {
 ?>
-<h2>Tambah Transaksi Baru</h2>
+<h2 style="color: #ffffff;">Tambah Transaksi Baru</h2>
 <hr>
-<form method="post" action="" class="form-horizontal" role="form">
+<form method="post" action="" class="form-horizontal" role="form" style="color: #ffffff;">
 	<div class="form-group">
 		<label for="no_nota" class="col-sm-2 control-label">No. Nota</label>
 		<div class="col-sm-3">

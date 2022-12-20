@@ -28,9 +28,9 @@ if( empty( $_SESSION['id_user'] ) ){
 		while($row = mysqli_fetch_array($sql)){
 
 ?>
-<h2>Edit Data Master total Jasa</h2>
+<h2 style="color: #ffffff;">Edit Data Master total Jasa</h2>
 <hr>
-<form method="post" action="" class="form-horizontal" role="form">
+<form method="post" action="" class="form-horizontal" role="form" style="color: #ffffff;">
 	<div class="form-group">
 		<label for="jenis" class="col-sm-2 control-label">Jenis Kendaraan</label>
 		<div class="col-sm-4">
@@ -47,7 +47,7 @@ if( empty( $_SESSION['id_user'] ) ){
 	<div class="form-group">
 		<div class="col-sm-offset-2 col-sm-10">
 			<button type="submit" name="submit" class="btn btn-success">Simpan</button>
-			<a href="./admin.php?hlm=total" class="btn btn-danger">Batal</a>
+			<a href="./admin.php?hlm=biaya" class="btn btn-danger">Batal</a>
 		</div>
 	</div>
 </form>

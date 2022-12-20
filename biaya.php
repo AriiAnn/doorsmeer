@@ -25,7 +25,7 @@ if( empty( $_SESSION['id_user'] ) ){
 
 			<div class="container">
 			<div class="col-md-8">
-				<h3 style="margin-bottom: -20px;">Data Master Biaya Jasa</h3>
+				<h3 style="margin-bottom: -20px; color: #ffffff;"">Data Master Biaya Jasa</h3>
 					<a href="./admin.php?hlm=biaya&aksi=baru" class="btn btn-success btn-s pull-right">Tambah Data</a>
 				<br/><hr/>
 
@@ -49,7 +49,7 @@ if( empty( $_SESSION['id_user'] ) ){
 	 				$no++;
 	 			echo '
 
-				   <tr>
+				   <tr style="color: #ffffff;">
 					 <td>'.$no.'</td>
 					 <td>'.$row['jenis'].'</td>
 					 <td>'.$row['biaya'].'</td>
@@ -69,7 +69,7 @@ if( empty( $_SESSION['id_user'] ) ){
 					 </td>';
 				}
 			} else {
-				 echo '<td colspan="8"><center><p class="add">Tidak ada data untuk ditampilkan. <u><a href="?hlm=biaya&aksi=baru">Tambah data baru</a></u> </p></center></td></tr>';
+				 echo '<td colspan="8"><center><p class="add" style="color: #ffffff;">Tidak ada data untuk ditampilkan. <u><a href="?hlm=biaya&aksi=baru" style="color: #ffffff;">Tambah data baru</a></u> </p></center></td></tr>';
 			}
 			echo '
 			 	</tbody>

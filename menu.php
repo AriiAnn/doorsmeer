@@ -7,18 +7,18 @@
   <div class="container">
 	<div class="navbar-header">
 	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-		<span class="sr-only">Toggle navigation</span>
+		<span class="sr-only"></span>
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	  </button>
-	  <a class="navbar-brand" href=""><span class="glyphicon glyphicon-star"></span> Aplikasi Jasa Cuci</a>
+	  <a class="navbar-brand" href="./admin.php"><span class="glyphicon glyphicon-star"></span>Aplikasi Jasa Cuci</a>
 	</div>
 	<div class="navbar-collapse collapse">
 	  <ul class="nav navbar-nav">
+		<li></li>
 		<li><a href="./admin.php">Beranda</a></li>
 		<li><a href="./admin.php?hlm=transaksi">Transaksi</a></li>
-
         <?php
         if( $_SESSION['level'] == 1 ){
         ?>

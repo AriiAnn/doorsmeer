@@ -30,16 +30,25 @@ if( empty( $_SESSION['id_user'] ) ){
 	body {
 	  min-height: 200px;
 	  padding-top: 70px;
+	  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(image/background.jpg);
+  	background-size: cover;
 	}
-   @media print {
-	   .container {
-		   margin-top: -30px;
-	   }
-	   #tombol,
-      .noprint {
-         display: none;
-      }
-   }
+	.jumbotron {
+		background:rgba(1,1,1,0.5);
+	}
+	.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    flex-basis: 30%;
+    text-align: center;
+	}
 	</style>
 
   </head>
@@ -73,9 +82,12 @@ if( empty( $_SESSION['id_user'] ) ){
 	?>
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
+	  	<div class="text-center">
+  			<img src="image/logo.png" class="rounded" alt="logo" style="max-width: 360px;">
+		</div>
         <h2>Selamat Datang di Aplikasi Kasir Jasa Cuci</h2>
 
-        <p>Halo <strong><?php echo $_SESSION['nama']; ?></strong>, Anda login sebagai
+        <p style="color: #bfe1e7;">Halo <strong><?php echo $_SESSION['nama']; ?></strong>, Anda login sebagai
 			<strong>
 			<?php
 				if($_SESSION['level'] == 1){
@@ -87,6 +99,22 @@ if( empty( $_SESSION['id_user'] ) ){
 			</strong>
 		</p>
       </div>
+	  <div class="jumbotron" style="color: #bfe1e7;">
+	  <div class="row text-center">
+  		<div class="col-md-4">
+		  <p>Irvan Nasyakban</p>
+		  <img src="image/irvan.png" style="width: 150px;">
+		</div>
+  		<div class="col-md-4">
+		  <p>Widia Hamsi</p>
+          <img src="image/widia.png" style="width: 150px;">
+		</div>
+  		<div class="col-md-4">
+		  <p>Muhammad Ariansyah</p>
+          <img src="image/ari.png" style="width: 150px;">
+		</div>
+	  </div>
+	  </div>
 	<?php
 	}
 	?>

@@ -25,7 +25,7 @@ if( empty( $_SESSION['id_user'] ) ){
 
 			<div class="container">
 			<div class="col-md-8">
-				<h3 style="margin-bottom: -20px;">Daftar User</h3>
+				<h3 style="margin-bottom: -20px; color: #ffffff;">Daftar User</h3>
 					<a href="./admin.php?hlm=user&aksi=baru" class="btn btn-success btn-s pull-right">Tambah User</a>
 				<br/><hr/>
 
@@ -50,7 +50,7 @@ if( empty( $_SESSION['id_user'] ) ){
 	 				$no++;
 	 			echo '
 
-				   <tr>
+				   <tr style="color: #ffffff;">
 					 <td>'.$no.'</td>
 					 <td>'.$row['username'].'</td>
 					 <td>'.$row['nama'].'</td>
