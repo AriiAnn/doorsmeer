@@ -71,9 +71,6 @@ if( empty( $_SESSION['id_user'] ) ){
 			case 'user':
 				include "user.php";
 				break;
-			case 'biaya':
-				include "biaya.php";
-				break;
 			case 'cetak':
 				include "cetak_nota.php";
 				break;
@@ -81,11 +78,11 @@ if( empty( $_SESSION['id_user'] ) ){
 	} else {
 	?>
       <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-	  	<div class="text-center">
-  			<img src="image/logo.png" class="rounded" alt="logo" style="max-width: 360px;">
-		</div>
-        <h2>Selamat Datang di Aplikasi Kasir Jasa Cuci</h2>
+		<div class="jumbotron">
+			<div class="text-center">
+				<img src="image/logo.png" class="rounded" alt="logo" style="max-width: 360px;">
+			</div>
+			<h2>Selamat Datang di Aplikasi Kasir Jasa Cuci</h2>
 
         <p style="color: #bfe1e7;">Halo <strong><?php echo $_SESSION['nama']; ?></strong>, Anda login sebagai
 			<strong>

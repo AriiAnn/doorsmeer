@@ -101,11 +101,6 @@ if( empty( $_SESSION['id_user'] ) ){
 
 $(document).ready(function(){
 
-  $("#jenis").change(function(){
-	var biaya = $(this).val();
-	$("#total").val(total);
-  });
-
   $("#bayar").keyup(function(){
 	  var total = $("#total").val();
 	  var bayar = $("#bayar").val();

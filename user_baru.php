@@ -15,6 +15,7 @@ if( empty( $_SESSION['id_user'] ) ){
 		$hp = $_REQUEST['hp'];
 		$level = $_REQUEST['level'];
 
+		//Menambahkan data user baru
 		$sql = mysqli_query($koneksi, "INSERT INTO user(username, password, nama, alamat, hp, level) VALUES('$username', '$password', '$nama', '$alamat', '$hp', '$level')");
 
 		if($sql == true){

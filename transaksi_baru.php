@@ -16,6 +16,7 @@ if( empty( $_SESSION['id_user'] ) ){
 		$total = $_REQUEST['total'];
 		$id_user = $_SESSION['id_user'];
 
+		// Menyimpan data ke database
 		$sql = mysqli_query($koneksi, "INSERT INTO transaksi(no_nota, jenis, nama, bayar, kembali, total, tanggal, id_user) VALUES('$no_nota', '$jenis', '$nama', '$bayar', '$kembali', '$total', NOW(), '$id_user')");
 
 		if($sql == true){
@@ -34,7 +35,7 @@ if( empty( $_SESSION['id_user'] ) ){
 		<div class="col-sm-3">
 
 		<?php
-
+			// Mengecek no-nota
 			$sql = mysqli_query($koneksi, "SELECT no_nota FROM transaksi");
 				echo '<input type="text" class="form-control" id="no_nota" value="';
 
@@ -117,11 +118,6 @@ if( empty( $_SESSION['id_user'] ) ){
 <script>
 
   $(document).ready(function(){
-
-    $("#jenis").change(function(){
-      var biaya = $(this).val();
-      $("#biaya").val(biaya);
-    });
 
     $("#bayar").keyup(function(){
         var biaya = $("#biaya").val();
