@@ -48,7 +48,7 @@
 </div>
 <?php
 } else {
-	header("Location: ./");
+	header("Location: ./index.php");
 	die();
 }
 ?>

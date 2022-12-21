@@ -90,7 +90,7 @@
 		} else {
 
 			$_SESSION['err'] = '<strong>ERROR!</strong> Username dan Password tidak ditemukan.';
-			header('Location: ./');
+			header('Location: ./index.php');
 			die();
 		}
 

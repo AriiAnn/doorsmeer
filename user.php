@@ -3,7 +3,7 @@
 if( empty( $_SESSION['id_user'] ) ){
 
 	$_SESSION['err'] = '<strong>ERROR!</strong> Anda harus login terlebih dahulu.';
-	header('Location: ./');
+	header('Location: ./index.php');
 	die();
 } else {
 	if( isset( $_REQUEST['aksi'] )){

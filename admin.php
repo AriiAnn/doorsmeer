@@ -3,7 +3,7 @@ session_start();
 if( empty( $_SESSION['id_user'] ) ){
 	//session_destroy();
 	$_SESSION['err'] = '<strong>ERROR!</strong> Anda harus login terlebih dahulu.';
-	header('Location: ./');
+	header('Location: ./index.php');
 	die();
 } else {
 	include "koneksi.php";
